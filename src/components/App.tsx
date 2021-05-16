@@ -25,7 +25,7 @@ function App() {
     note:"This is the my friend"
   }])
   const dispatch=useDispatch()
-  const {depositMoney,withdrawMoney,bankrupt}=bindActionCreators(ActionCreator,dispatch)
+  const {withdrawMoney,bankrupt}=bindActionCreators(ActionCreator,dispatch)
   const amount=useSelector((state:State)=>state.bank)
   return (
     <BrowserRouter>
